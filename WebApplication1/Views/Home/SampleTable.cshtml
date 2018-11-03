@@ -1,0 +1,52 @@
+﻿@model   List<WebApplication1.Models.Customer>
+
+@{
+    ViewBag.Title = "SampleTable";
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th class="text-center">Invoice</th>
+            <th>User</th>
+            <th>Order date</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Tracking Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a class="btn-link" href="#"> Order #53431</a></td>
+            <td>Steve N. Horton</td>
+            <td><span class="text-muted"><i class="demo-pli-clock"></i> Oct 22, 2014</span></td>
+            <td>$45.00</td>
+            <td>
+                <div class="label label-table label-danger">Paid</div>
+            </td>
+            <td>-</td>
+        </tr>
+
+        @foreach (var itm in Model)
+        {
+            <tr>
+                <td><a class="btn-link" href="#"> Order #53431</a></td>
+                <td>@itm.CustomernAME</td>
+                <td><span class="text-muted"><i class="demo-pli-clock"></i> Oct 22, 2014</span></td>
+                <td>@itm.LastName</td>
+                <td>
+                    <div class="label label-table label-danger">Paid</div>
+                </td>
+                <td>-</td>
+            </tr>
+        }
+
+
+
+
+    </tbody>
+</table>
+
+<button class="btn btn-danger">Sumit to Die</button>
+<button class="btn btn-success">Cancel</button>
+

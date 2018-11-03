@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<cmnRequest mockResponse="true">
+  <medicareMainframe>
+    <application>
+      <facilityState>OH</facilityState>
+      <lineOfBusiness>DME</lineOfBusiness>
+    </application>
+    <credential>
+      <userId></userId>
+      <password>kJMGly@4</password>
+    </credential>
+  </medicareMainframe>
+  <searchCriteria maxResults="0">
+    <npi>1699087593</npi>
+    <hic>426230344A</hic>
+    <hcpcs>1971</hcpcs>
+  </searchCriteria>
+</cmnRequest>
+
